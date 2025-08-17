@@ -149,7 +149,7 @@ function M.setup(user_config)
             local row_offset = paste_end[1]
             local col_offset = paste_end[2] + 10
             -- move cursor to the end of the line
-            print(row_offset, col_offset)
+            -- print(row_offset, col_offset)
             vim.api.nvim_win_set_cursor(0, { row_offset, col_offset })
         else
             original_tab_behaviour()
